@@ -1,9 +1,23 @@
-var express = require('express');
-var router = express.Router();
+
+const express = require('express');
+const router = express.Router();
+const TaskManager = require('../models/TaskManager');
+
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', async function(req, res, next) {
+
+
+  try {
+    const TaskManager = await TaskManager.find({});
+    res.json({TaskManager: TaskManager });
+  }catch(e){
+    console.log(e);
+  }
 });
+
+
+
+
 
 module.exports = router;
