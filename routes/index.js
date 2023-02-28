@@ -9,8 +9,8 @@ router.get('/', async function(req, res, next) {
 
 
   try {
-    const TaskManager = await TaskManager.find({});
-    res.json({TaskManager: TaskManager });
+    const taskManager = await TaskManager.find({});
+    res.json({taskManager: taskManager });
   }catch(e){
     console.log(e);
   }
