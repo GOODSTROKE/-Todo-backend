@@ -1,0 +1,28 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "Todo Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development nodemon app.js"
+  },
+  "author": "Nazmul Huda",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.17.2",
+    "express-rate-limit": "^6.0.5",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.1.7",
+    "mongoose-unique-validator": "^3.0.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0",
+    "yup": "^0.32.11"
+  }
+}
